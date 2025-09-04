@@ -10,13 +10,28 @@ function linkTwitterRemouve() {
 linkTwitterRemouve()
 
 // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
-const linkButtonRemouve=document.querySelector(".jumbotron p>a")
-const father=document.querySelector(".jumbotron")
 
-function removeFatherElement(){
-    father.remove()
+function removeElement(element) {
+    element.remove();
 }
-linkButtonRemouve.addEventListener("click",removeFatherElement)
+
+const anchorsToRemove = document.querySelectorAll(".col a, .jumbotron p>a");
+
+anchorsToRemove.forEach(anchor => {
+    const parent = anchor.parentElement
+    anchor.addEventListener("click", () => {
+        removeElement(parent)
+    })
+})
+
+
+/*removeElement(linkTwitter)*/
+
+
+/*function removeFatherElement(){
+    father.remove()
+}*/
+
 
 
 // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.

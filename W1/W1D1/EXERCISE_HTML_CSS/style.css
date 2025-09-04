@@ -1,10 +1,6 @@
 /*ESERCIZI:
 Partendo dal file allegato ...*/
 
-.blog-sidebar .p-4:nth-of-type(3) ol li:nth-of-type(2){
-    background-color: blue;
-}
-
 
 /*Crea un selettore per selezionare I'<h1> nella sezione "hero", ovvero nel jumbotron*/
 .jumbotron h1{
@@ -88,5 +84,13 @@ footer p a:nth-of-type(2){
 }
 
 .blog-post-meta{
-    background-color: aqua;
+    background-color: rgb(221, 249, 249);
+}
+
+.col a{
+    background-color: rgb(242, 213, 213);
+}
+
+.card-text{
+    background-color: rgb(227, 216, 238);
 }
